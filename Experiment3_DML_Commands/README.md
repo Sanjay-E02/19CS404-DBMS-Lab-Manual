@@ -46,6 +46,7 @@ Used to retrieve records from a table.
 SELECT column1, column2 FROM table_name WHERE condition;
 ```
 **Question 1**
+
 ![image](https://github.com/user-attachments/assets/e66b8a73-8553-41b1-9c55-51fe37bebff7)
 
 
@@ -59,6 +60,7 @@ UPDATE suppliers set supplier_name=UPPER(supplier_name) where contact_person lik
 
 
 **Question 2**
+
 ![image](https://github.com/user-attachments/assets/fe683199-4502-4f70-bdc2-73ad1bf091ae)
 
 
@@ -72,6 +74,7 @@ update suppliers set supplier_name="A1 Suppliers" where supplier_id=8;
 
 
 **Question 3**
+
 ![image](https://github.com/user-attachments/assets/a34d1a4b-dbfe-4981-8985-0f79201dc05f)
 
 
@@ -85,6 +88,7 @@ update sales set sell_price=sell_price+0.05*sell_price where sale_date='2023-01-
 
 
 **Question 4**
+
 ![image](https://github.com/user-attachments/assets/56068db9-8454-4782-a568-8f39227c65a1)
 
 
@@ -98,6 +102,7 @@ delete from Customer  where WORKING_AREA is 'New York';
 
 
 **Question 5**
+
 ![image](https://github.com/user-attachments/assets/19ad7026-dbc4-4cb6-a428-085773a388fe)
 
 
@@ -113,6 +118,7 @@ where product_name like '%cream%' and quantity >reorder_lvl;
 
 
 **Question 6**
+
 ![image](https://github.com/user-attachments/assets/54d816f3-bcaa-41e8-975a-00f7ddcb8c76)
 
 ```sql
@@ -125,6 +131,7 @@ where specialization ='Cardiology';
 ![image](https://github.com/user-attachments/assets/40b1eb06-d6e0-43dd-827d-085818e597bd)
 
 **Question 7**
+
 ![image](https://github.com/user-attachments/assets/b2b91a55-3c07-43be-a11a-d84575759679)
 
 ```sql
@@ -138,6 +145,7 @@ where doctor_id  = 1;
 
 
 **Question 8**
+
 ![image](https://github.com/user-attachments/assets/13d56186-ac06-4539-b7e5-293f6861e746)
 
 
@@ -151,6 +159,7 @@ where surgery_id = 3;
 ![image](https://github.com/user-attachments/assets/be13907a-6f75-4f3a-a818-e66f3e632dc8)
 
 **Question 9**
+
 ![image](https://github.com/user-attachments/assets/127783f9-0b97-4ea2-90d9-180dfbcc5fcb)
 
 
@@ -166,6 +175,7 @@ and PAYMENT_AMT<3000;
 
 
 **Question 10**
+
 ![image](https://github.com/user-attachments/assets/1dff0a36-7be1-46ee-9d01-35c92e1e3474)
 
 
