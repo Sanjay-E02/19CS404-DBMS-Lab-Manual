@@ -37,124 +37,219 @@ HAVING condition;
 ```
 
 **Question 1**
---
--- Paste Question 1 here
+
+![image](https://github.com/user-attachments/assets/8a9c6661-e5bd-46b6-b283-e6fd3f317853)
 
 ```sql
--- Paste your SQL code below for Question 1
+select 
+PatientID,
+count(*) as TotalAppointments
+from
+Appointments
+group by
+PatientID
+order by
+PatientID;
 ```
 
 **Output:**
 
-![Output1](output.png)
+![image](https://github.com/user-attachments/assets/d972e1a7-41ef-4964-ba2a-faa8eb92b02b)
 
 **Question 2**
----
--- Paste Question 2 here
+
+![image](https://github.com/user-attachments/assets/034ff13b-61bd-46b2-b6c7-563ef4abee7f)
+
 
 ```sql
--- Paste your SQL code below for Question 2
+select
+strftime('%H',AppointmentDateTime) as "HourOfDay",
+count(*) as "TotalAppointments"
+from
+Appointments
+group by
+strftime('%H',AppointmentDateTime)
+order by
+HourOfDay;
 ```
 
 **Output:**
 
-![Output2](output.png)
+![image](https://github.com/user-attachments/assets/a10934b3-bb65-4256-93ca-076c8d949a4f)
 
 **Question 3**
----
--- Paste Question 3 here
+
+![image](https://github.com/user-attachments/assets/aa95aa42-4a38-440e-89e9-766814336c17)
+
 
 ```sql
--- Paste your SQL code below for Question 3
+select
+strftime('%Y',ValidityPeriod) as "ValidityYear",
+count(*) as "TotalPatients"
+from
+Insurance 
+group by
+strftime('%Y',ValidityPeriod)
+order by
+ValidityYear;
 ```
 
 **Output:**
 
-![Output3](output.png)
+![image](https://github.com/user-attachments/assets/56f00a4c-18c1-4a7c-aeeb-92589f03dfd7)
+
 
 **Question 4**
----
--- Paste Question 4 here
+
+![image](https://github.com/user-attachments/assets/fbd62112-c5f7-4677-8f5b-a8c957416a7e)
 
 ```sql
--- Paste your SQL code below for Question 4
+select
+count(*) as "COUNT"
+from
+customer
+where
+city!= 'Noida';
 ```
 
 **Output:**
 
-![Output4](output.png)
+![image](https://github.com/user-attachments/assets/a096f6f9-e6b0-46a1-a14a-f5ba697f2c3e)
+
 
 **Question 5**
----
--- Paste Question 5 here
+
+![image](https://github.com/user-attachments/assets/2fa46b4c-5434-480b-bb03-9e661bd1a00d)
+
 
 ```sql
--- Paste your SQL code below for Question 5
+select
+name as "fruit_name",
+min(inventory) as "lowest_quantity"
+from
+fruits
+group by
+name
+order by
+min(inventory)asc
+limit 1;
 ```
 
 **Output:**
 
-![Output5](output.png)
+![image](https://github.com/user-attachments/assets/775ef9fd-f6ef-43fb-b768-9c126bf90389)
 
 **Question 6**
----
--- Paste Question 6 here
+
+![image](https://github.com/user-attachments/assets/747ecbda-528d-4267-bc82-0c9d25c9c9c1)
+
 
 ```sql
--- Paste your SQL code below for Question 6
+select
+name,
+max(length(name)) as "length"
+from
+customer
+order by
+max(length(name))asc
+ limit 1;
 ```
 
 **Output:**
 
-![Output6](output.png)
+![image](https://github.com/user-attachments/assets/cbfb4d43-933c-4c6b-9185-9e1c34a0a019)
+
 
 **Question 7**
----
--- Paste Question 7 here
+
+![image](https://github.com/user-attachments/assets/956d5aef-7742-47c1-b45d-8922ea6aa164)
+
 
 ```sql
--- Paste your SQL code below for Question 7
+select
+name,
+email,
+min(length(email)) as"min_email_length"
+from
+customer
+order by
+min(length(email))
+limit 1;
 ```
 
 **Output:**
 
-![Output7](output.png)
+![image](https://github.com/user-attachments/assets/32202734-9d8c-4eba-b1c5-f5c461ebfbaa)
 
 **Question 8**
----
--- Paste Question 8 here
+
+![image](https://github.com/user-attachments/assets/87fb53d7-4bad-4a4a-835c-f8736a890ec0)
+
 
 ```sql
--- Paste your SQL code below for Question 8
+select 
+(age/5)*5 as "age_group",
+min(salary) as"MIN(salary)"
+from
+customer1
+group by
+(age/5)*5
+having
+min(salary)<2000
+order by
+age_group;
 ```
 
 **Output:**
 
-![Output8](output.png)
+![image](https://github.com/user-attachments/assets/111bddf3-d72e-4713-862e-60b855da930a)
+
 
 **Question 9**
----
--- Paste Question 9 here
+
+![image](https://github.com/user-attachments/assets/b54be57f-fb64-41f2-bf05-bdb6589157e6)
 
 ```sql
--- Paste your SQL code below for Question 9
+select
+jdate,
+sum(workhour) as "SUM(workhour)"
+from
+employee1
+group by
+jdate
+having
+sum(workhour)>40
+order by
+jdate;
 ```
 
 **Output:**
 
-![Output9](output.png)
+![image](https://github.com/user-attachments/assets/bd40229e-f5c4-4418-b648-d708f3276e2c)
+
 
 **Question 10**
----
--- Paste Question 10 here
+
+![image](https://github.com/user-attachments/assets/3dd66104-20d3-4e0b-a3b8-583f57262164)
 
 ```sql
--- Paste your SQL code below for Question 10
+select
+address,
+sum(salary) as "SUM(salary)"
+from
+customer1
+group by
+address
+having
+sum(salary)>2000
+order by
+address;
 ```
 
 **Output:**
 
-![Output10](output.png)
+![image](https://github.com/user-attachments/assets/338f6bbe-8352-4127-afc2-5efb2d070a4c)
+
 
 
 ## RESULT
