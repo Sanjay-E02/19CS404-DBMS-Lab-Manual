@@ -46,124 +46,139 @@ Used to retrieve records from a table.
 SELECT column1, column2 FROM table_name WHERE condition;
 ```
 **Question 1**
---
--- Paste Question 1 here
+![image](https://github.com/user-attachments/assets/e66b8a73-8553-41b1-9c55-51fe37bebff7)
 
-```sql
--- Paste your SQL code below for Question 1
+
+```
+UPDATE suppliers set supplier_name=UPPER(supplier_name) where contact_person like '%Singh%';
 ```
 
 **Output:**
 
-![Output1](output.png)
+![image](https://github.com/user-attachments/assets/d6d34262-f339-4190-b5bc-a76f9531000d)
+
 
 **Question 2**
----
--- Paste Question 2 here
+![image](https://github.com/user-attachments/assets/fe683199-4502-4f70-bdc2-73ad1bf091ae)
+
 
 ```sql
--- Paste your SQL code below for Question 2
+update suppliers set supplier_name="A1 Suppliers" where supplier_id=8;
 ```
 
 **Output:**
 
-![Output2](output.png)
+![image](https://github.com/user-attachments/assets/c79b7ff0-36d4-416e-9fd7-ba27cef3cb52)
+
 
 **Question 3**
----
--- Paste Question 3 here
+![image](https://github.com/user-attachments/assets/a34d1a4b-dbfe-4981-8985-0f79201dc05f)
+
 
 ```sql
--- Paste your SQL code below for Question 3
+update sales set sell_price=sell_price+0.05*sell_price where sale_date='2023-01-31';
 ```
 
 **Output:**
 
-![Output3](output.png)
+![image](https://github.com/user-attachments/assets/7d4c3590-022f-441f-8154-2b16e8337153)
+
 
 **Question 4**
----
--- Paste Question 4 here
+![image](https://github.com/user-attachments/assets/56068db9-8454-4782-a568-8f39227c65a1)
+
 
 ```sql
--- Paste your SQL code below for Question 4
+delete from Customer  where WORKING_AREA is 'New York';
 ```
 
 **Output:**
 
-![Output4](output.png)
+![image](https://github.com/user-attachments/assets/5863d2f2-7b35-4fca-85c3-72c385ea5174)
+
 
 **Question 5**
----
--- Paste Question 5 here
+![image](https://github.com/user-attachments/assets/19ad7026-dbc4-4cb6-a428-085773a388fe)
 
-```sql
--- Paste your SQL code below for Question 5
+
+```
+update PRODUCTS
+set reorder_lvl= reorder_lvl*0.7
+where product_name like '%cream%' and quantity >reorder_lvl;
 ```
 
 **Output:**
 
-![Output5](output.png)
+![image](https://github.com/user-attachments/assets/3ebbb1e1-2033-47d2-b881-b653f56c577d)
+
 
 **Question 6**
----
--- Paste Question 6 here
+![image](https://github.com/user-attachments/assets/54d816f3-bcaa-41e8-975a-00f7ddcb8c76)
 
 ```sql
--- Paste your SQL code below for Question 6
+delete from Doctors
+where specialization ='Cardiology';
 ```
 
 **Output:**
 
-![Output6](output.png)
+![image](https://github.com/user-attachments/assets/40b1eb06-d6e0-43dd-827d-085818e597bd)
 
 **Question 7**
----
--- Paste Question 7 here
+![image](https://github.com/user-attachments/assets/b2b91a55-3c07-43be-a11a-d84575759679)
 
 ```sql
--- Paste your SQL code below for Question 7
+delete from Doctors
+where doctor_id  = 1;
 ```
 
 **Output:**
 
-![Output7](output.png)
+![image](https://github.com/user-attachments/assets/89c94eae-2741-4fd0-8555-b46bfd5440a7)
+
 
 **Question 8**
----
--- Paste Question 8 here
+![image](https://github.com/user-attachments/assets/13d56186-ac06-4539-b7e5-293f6861e746)
+
 
 ```sql
--- Paste your SQL code below for Question 8
+delete from Surgeries
+where surgery_id = 3;
 ```
 
 **Output:**
 
-![Output8](output.png)
+![image](https://github.com/user-attachments/assets/be13907a-6f75-4f3a-a818-e66f3e632dc8)
 
 **Question 9**
----
--- Paste Question 9 here
+![image](https://github.com/user-attachments/assets/127783f9-0b97-4ea2-90d9-180dfbcc5fcb)
+
 
 ```sql
--- Paste your SQL code below for Question 9
+delete from Customer
+where (GRADE=2 and CUST_NAME like 'M%')
+and PAYMENT_AMT<3000;
 ```
 
 **Output:**
 
-![Output9](output.png)
+![image](https://github.com/user-attachments/assets/11f0d744-bd5d-4646-9da3-ea90b03bd9d0)
+
 
 **Question 10**
----
--- Paste Question 10 here
+![image](https://github.com/user-attachments/assets/1dff0a36-7be1-46ee-9d01-35c92e1e3474)
+
 
 ```sql
--- Paste your SQL code below for Question 10
+delete from Customer
+where GRADE >2 
+and PAYMENT_AMT <(select avg(PAYMENT_AMT)from Customer)
+or OUTSTANDING_AMT>8000;
 ```
 
 **Output:**
 
-![Output10](output.png)
+![image](https://github.com/user-attachments/assets/df395136-16ff-4898-aee3-97b20fb4f56c)
 
 ## RESULT
 Thus, the SQL queries to implement DML commands have been executed successfully.
