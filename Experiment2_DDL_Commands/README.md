@@ -104,6 +104,7 @@ CREATE TABLE Table_Name (
 ```
 
 **Question 1**
+
 ![image](https://github.com/user-attachments/assets/8f856dc6-1930-4c78-9525-717a4849cd1f)
 ~~~
 insert into Products(Name,Category,price,Stock)
@@ -111,11 +112,13 @@ values("Smartphone","Electronics",800,150),
 ("Headphones","Accessories",200,300);
 ~~~
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/c4c32ba0-168c-4e75-a1fc-1c4cdd529e22)
 
 
 
 **Question 2**
+
 ![image](https://github.com/user-attachments/assets/7a9e4a9a-8ffc-42be-b7dd-f9652d832b73)
 ~~~
  create table item(
@@ -125,10 +128,13 @@ references company(com_id) on update set null on delete set null);
 ~~~
 **Output:**
 
+
 ![image](https://github.com/user-attachments/assets/84d50d92-1c32-4f54-9e16-90c924a38fe3)
 
 
+
 **Question 3**
+
 ![image](https://github.com/user-attachments/assets/63cb18ac-0b6c-47a2-a8a2-1daaf5739ff3)
 ~~~
 create table Department(
@@ -159,6 +165,7 @@ min_salary int default 8000,max_salary int);
 
 
 **Question 5**
+
 ![image](https://github.com/user-attachments/assets/7d4fd6ee-28a0-4552-b247-c417a046ee40)
 
 ```
@@ -167,9 +174,11 @@ alter table employees rename column job_title to Designation;
 ```
 
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/4a4eb8c3-6f09-430f-a241-4a0e9ef5748f)
 
 **Question 6**
+
 ![image](https://github.com/user-attachments/assets/13cf65dd-7137-4eb1-bf20-7c7f9c1a6027)
 
 ```
@@ -184,6 +193,7 @@ select ProductID,ProductName,Price,Stock from Discontinued_products;
 
 
 **Question 7**
+
 ![image](https://github.com/user-attachments/assets/25d9b1fb-5d5e-4e96-9fb3-41c03f345cc6)
 
 
@@ -193,10 +203,12 @@ alter table Companies add column net_salary number;
 ```
 
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/0a2a7e66-088e-458a-b391-27f549a69852)
 
 
 **Question 8**
+
 ![image](https://github.com/user-attachments/assets/e5048823-673d-4768-87ba-c33f0424c07b)
 
 
@@ -212,6 +224,7 @@ foreign key(icom_id) references company(com_id) on update cascade on delete casc
 
 
 **Question 9**
+
 ![image](https://github.com/user-attachments/assets/2c69a3d3-0804-4d80-9246-2a12f7b8a25a)
 
 
@@ -225,6 +238,7 @@ insert into Student_details(RollNo,Name,Gender) values(204,"Samuel Black","M");
 
 
 **Question 10**
+
 ![image](https://github.com/user-attachments/assets/44640c44-1b3c-4bd2-bb2b-db50c0bbd98b)
 
 ```
@@ -232,9 +246,11 @@ create table Customers(CustomerID INTEGER,Name TEXT,Email TEXT,JoinDate DATETIME
 ```
 
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/f4216879-d170-4c3a-ac7b-00a738d69e5d)
 
 ## GRADES:
+
 ![image](https://github.com/user-attachments/assets/05c76d13-8b21-42f4-bdd7-39fc4923e9bf)
 
 
